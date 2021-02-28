@@ -1,0 +1,4 @@
+<ng-container *ngIf="notes$ | async as notes">
+  <app-avatar *ngFor="let note of notes" [alt]="note.lastName" [url]="note.photoUrl">
+  </app-avatar>
+</ng-container>
