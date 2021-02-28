@@ -1,4 +1,10 @@
+:host{
+  display: block;
+}
+
 .main-content {
   min-width: 375px;
   max-width: 1200px;
+  margin: auto;
+  height: 100%;
 }

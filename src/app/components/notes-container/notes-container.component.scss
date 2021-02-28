@@ -1,0 +1,17 @@
+:host{
+  display: block;
+  height: 100%;
+  padding: 20px;
+}
+
+.notes__wrapper{
+  overflow: auto;
+  height: 100%;
+  box-shadow: 0 3px 6px #C2CDDD;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.note__container {
+  margin-bottom: 10px;
+}

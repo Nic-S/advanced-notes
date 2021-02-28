@@ -1,0 +1,13 @@
+<div class="note">
+  <div style="padding-right: 25px">
+    <app-avatar [alt]="note.lastName" [url]="note.photoUrl">
+    </app-avatar>
+  </div>
+  <div>
+    <div style="display: flex; padding-bottom: 10px">
+      <span>{{note.name}} {{note.lastName}}</span>
+      <span style="margin-left: auto">{{note.date}}</span>
+    </div>
+    <app-note-message class="note__message note__message--left" [message]="note.message"></app-note-message>
+  </div>
+</div>
