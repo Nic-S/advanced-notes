@@ -1,21 +1,30 @@
-.message {
-  background-color: #EFF2F7;
-  padding: 10px;
+.note__message {
+  display: flex;
+  flex-direction: column
 }
 
-.message--left {
-  position: relative;
-  text-align: left;
-
+.note__message--collapse {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
-.message--left::before {
-  content: '';
-  position: absolute;
-  visibility: visible;
-  top: 0px;
-  left: -8px;
-  border: 8px solid transparent;
-  border-top: 10px solid #EFF2F7;
-  clear: both;
+.note__message--expanded {
+  display: block;
+}
+
+.note__message__button {
+  margin-left: auto;
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid;
+  cursor: pointer;
+  margin-top: 5px;
+  padding: 0 2px;
+  color: #D3135A ;
+}
+
+.note__message__button:hover {
+  opacity: 0.7;
 }

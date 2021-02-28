@@ -1,1 +1,6 @@
-<div>{{message}}</div>
+<div class="note__message">
+  <div #messageBox class="note__message--collapse" [class.note__message--expanded]="expanded">
+    <span>{{message}}</span>
+  </div>
+  <span *ngIf="isReadMoreVisible && !expanded" class="note__message__button" (click)="onReadMore()">Read More</span>
+</div>
