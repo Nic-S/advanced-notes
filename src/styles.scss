@@ -1,4 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
+$scroll-color: #667790;
+$scroll-background: #0E141A1A;
+
 html,
 body,
 app-root {
@@ -11,4 +14,22 @@ app-root {
 
 * {
   box-sizing: border-box;
+}
+
+:root {
+  --scroll-color: #{$scroll-color};
+  --scroll-background: #{$scroll-background};
+}
+
+*::-webkit-scrollbar {
+  width: 8px;
+}
+
+*::-webkit-scrollbar-track {
+  background: var(--scroll-background);
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: var(--scroll-color);
+  border-radius: 10px;
 }
