@@ -9,10 +9,16 @@ export class AvatarComponent implements OnInit {
 
   @Input() public url: string;
   @Input() public alt: string = 'avatar image'
+  public error = false;
 
   constructor() { }
 
   ngOnInit(): void {
+    this.error = false;
+  }
+
+  onError = (img: any) => {
+    this.error = true;
   }
 
 }

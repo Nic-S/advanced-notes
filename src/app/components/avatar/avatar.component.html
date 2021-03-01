@@ -1,3 +1,6 @@
-<img [alt]="alt" class="avatar__img" [src]="url">
+<img *ngIf="!error; else errorTemplate" (error)="onError($event)" [alt]="alt" class="avatar__img" [src]="url">
+<ng-template #errorTemplate>
+  <div class="avatar__img--error">{{alt | shortName}}</div>
+</ng-template>
 
 
