@@ -14,6 +14,7 @@ app-root {
 
 * {
   box-sizing: border-box;
+  font-family: Univers LT Roman, Helvetica, Arial, sans-serif;
 }
 
 :root {
@@ -32,4 +33,11 @@ app-root {
 *::-webkit-scrollbar-thumb {
   background-color: var(--scroll-color);
   border-radius: 10px;
+}
+
+@font-face {
+  font-family: 'Univers LT Roman';
+  font-style: normal;
+  font-weight: normal;
+  src: url('./assets/font/Univers LT 55 Roman.woff') format('woff');
 }
