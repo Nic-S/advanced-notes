@@ -1,0 +1,9 @@
+<div class="out__note">
+  <div style="padding-left: 25px">
+    <app-avatar [alt]="note.name + ' ' + note.lastName" [url]="note.photoUrl"></app-avatar>
+  </div>
+  <div class="out__note__content">
+    <app-note-header [name]="note.name + ' ' + note.lastName" [date]="note.date"></app-note-header>
+    <app-note-message class="out__note__message out__note__message--left" [message]="note.message"></app-note-message>
+  </div>
+</div>

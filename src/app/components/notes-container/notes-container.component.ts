@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {NoteService} from "../../services/note.service";
-import {Note} from "../../model/note";
+import {Note, NOTE_TYPES} from "../../model/note";
 import {Observable} from "rxjs";
 
 @Component({
@@ -11,11 +11,12 @@ import {Observable} from "rxjs";
 export class NotesContainerComponent implements OnInit {
 
   public notes$: Observable<Note[]>
+  public noteTypes = NOTE_TYPES
 
   constructor(private noteService: NoteService) { }
 
   ngOnInit(): void {
-    this.notes$ = this.noteService.getOthersNotes()
+    this.notes$ = this.noteService.getNotes()
   }
 
 }

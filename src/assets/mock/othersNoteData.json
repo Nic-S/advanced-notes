@@ -5,7 +5,8 @@
     "lastName": "Smith",
     "date": "2021-02-10T15:47:05Z",
     "message": "Description Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-    "photoUrl": "https://source.unsplash.com/Pc0ToyoR5Xo"
+    "photoUrl": "https://source.unsplash.com/wys9Jty8wNQ",
+    "type": "IN"
   },
   {
     "id": 2,
@@ -13,7 +14,8 @@
     "lastName": "Rossi",
     "date": "2021-02-10T18:47:05Z",
     "message": "Description Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-    "photoUrl": "https://source.unsplash.com/tNCH0sKSZbA"
+    "photoUrl": "https://source.unsplash.com/tNCH0sKSZbA",
+    "type": "IN"
   },
   {
     "id": 3,
@@ -21,7 +23,8 @@
     "lastName": "Verdi",
     "date": "2021-02-09T10:32:05Z",
     "message": "Description Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-    "photoUrl": "https://source.unsplash.com/XHVpWcr5grQ"
+    "photoUrl": "https://source.unsplash.com/XHVpWcr5grQ",
+    "type": "IN"
   },
   {
     "id": 4,
@@ -29,7 +32,8 @@
     "lastName": "Stone",
     "date": "2021-02-14T13:32:05Z",
     "message": "Description Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-    "photoUrl": "https://source.unsplash.com/jBNeJ7L4dAs"
+    "photoUrl": "https://source.unsplash.com/jBNeJ7L4dAs",
+    "type": "IN"
   },
   {
     "id": 5,
@@ -37,7 +41,8 @@
     "lastName": "Williams",
     "date": "2021-02-16T17:32:05Z",
     "message": "Description Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-    "photoUrl": "https://source.unsplash.com/RgoJtqRDuGA"
+    "photoUrl": "https://source.unsplash.com/RgoJtqRDuGA",
+    "type": "IN"
   },
   {
     "id": 6,
@@ -45,6 +50,7 @@
     "lastName": "Taylor",
     "date": "2021-02-18T14:10:05Z",
     "message": "Description Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-    "photoUrl": "https://source.unsplash.com/h2pnXHMz8YM"
+    "photoUrl": "https://source.unsplash.com/h2pnXHMz8YM",
+    "type": "IN"
   }
 ]

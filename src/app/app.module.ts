@@ -8,6 +8,8 @@ import {HttpClientModule} from "@angular/common/http";
 import { NoteMessageComponent } from './components/note-message/note-message.component';
 import { InNoteComponent } from './components/in-note/in-note.component';
 import { NoteHeaderComponent } from './components/note-header/note-header.component';
+import { OutNoteComponent } from './components/out-note/out-note.component';
+import {ShortNamePipe} from "./utils/ShortNamePipe";
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { NoteHeaderComponent } from './components/note-header/note-header.compon
     NotesContainerComponent,
     NoteMessageComponent,
     InNoteComponent,
-    NoteHeaderComponent
+    NoteHeaderComponent,
+    OutNoteComponent,
+    ShortNamePipe
   ],
   imports: [
     BrowserModule,

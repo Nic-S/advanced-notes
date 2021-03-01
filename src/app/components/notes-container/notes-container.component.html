@@ -1,5 +1,8 @@
 <div *ngIf="notes$ | async as notes" class="notes__wrapper">
   <div *ngFor="let note of notes" class="note__container">
-    <app-in-note [note]="note"></app-in-note>
+    <ng-container [ngSwitch]="note.type">
+      <app-in-note *ngSwitchCase="noteTypes.in" [note]="note"></app-in-note>
+      <app-out-note *ngSwitchCase="noteTypes.out" [note]="note"></app-out-note>
+    </ng-container>
   </div>
 </div>
