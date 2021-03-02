@@ -3,12 +3,12 @@
   display: flex;
 }
 
-.in__note__content{
+.in__note__content {
   flex-grow: 1;
 }
 
 .in__note__message {
-  background-color: #EFF2F7;
+  background-color: #eff2f7;
   padding: 10px;
 }
 
@@ -26,6 +26,6 @@
   top: 0px;
   left: -8px;
   border: 8px solid transparent;
-  border-top: 10px solid #EFF2F7;
+  border-top: 10px solid #eff2f7;
   clear: both;
 }

@@ -1,9 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
 $scroll-color: #667790;
-$scroll-background: #0E141A1A;
-$button-primary: #D3135A;
+$scroll-background: #0e141a1a;
+$button-primary: #d3135a;
 $button-primary-hover: darken($button-primary, 20%);
-$button-secondary: #C2CDDD;
+$button-secondary: #c2cddd;
 $button-secondary-hover: darken($button-secondary, 20%);
 $button-flat-hover: lighten($button-primary, 20%);
 
@@ -46,7 +46,7 @@ app-root {
 }
 
 // firefox scrollbar
-*{
+* {
   scrollbar-color: var(--scroll-color) var(--scroll-background);
   scrollbar-width: thin;
 }

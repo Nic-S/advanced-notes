@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import {NoteService} from "../../services/note.service";
-import {Note, NOTE_TYPES} from "../../model/note";
-import {Observable} from "rxjs";
+import { NoteService } from '../../services/note.service';
+import { Note, NOTE_TYPES } from '../../model/note';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-notes-container',
@@ -9,17 +9,16 @@ import {Observable} from "rxjs";
   styleUrls: ['./notes-container.component.scss'],
 })
 export class NotesContainerComponent implements OnInit {
+  public notes$: Observable<Note[]>;
+  public noteTypes = NOTE_TYPES;
 
-  public notes$: Observable<Note[]>
-  public noteTypes = NOTE_TYPES
-
-  constructor(private noteService: NoteService) { }
+  constructor(private noteService: NoteService) {}
 
   ngOnInit(): void {
-    this.notes$ = this.noteService.getNotes()
+    this.notes$ = this.noteService.getNotes();
   }
 
   handlePublish(message: string) {
-    this.noteService.setUserNote({message, date: new Date().toISOString()})
+    this.noteService.setUserNote({ message, date: new Date().toISOString() });
   }
 }

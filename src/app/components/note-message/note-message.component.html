@@ -1,9 +1,12 @@
 <div class="note__message">
   <div #messageBox class="note__message--collapse" [class.note__message--expanded]="expanded">
-    <span>{{message}}</span>
+    <span>{{ message }}</span>
   </div>
-  <app-button *ngIf="isReadMoreVisible && !expanded"
-              (click)="onReadMore()"
-              [look]="'flat'"
-              class="note__message__button">Read More</app-button>
+  <app-button
+    *ngIf="isReadMoreVisible && !expanded"
+    (click)="onReadMore()"
+    [look]="'flat'"
+    class="note__message__button"
+    >Read More</app-button
+  >
 </div>

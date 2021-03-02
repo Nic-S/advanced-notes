@@ -1,22 +1,22 @@
 import {
-  AfterViewInit, ChangeDetectorRef,
+  AfterViewInit,
+  ChangeDetectorRef,
   Component,
   ElementRef,
   Input,
   OnDestroy,
   OnInit,
-  ViewChild
+  ViewChild,
 } from '@angular/core';
-import {fromEvent, Subscription} from "rxjs";
-import {map} from "rxjs/operators";
+import { fromEvent, Subscription } from 'rxjs';
+import { map } from 'rxjs/operators';
 
 @Component({
   selector: 'app-note-message',
   templateUrl: './note-message.component.html',
-  styleUrls: ['./note-message.component.scss']
+  styleUrls: ['./note-message.component.scss'],
 })
 export class NoteMessageComponent implements OnInit, AfterViewInit, OnDestroy {
-
   @Input() public message: string;
 
   @ViewChild('messageBox') public messageBox: ElementRef;
@@ -24,16 +24,17 @@ export class NoteMessageComponent implements OnInit, AfterViewInit, OnDestroy {
   public expanded: boolean = false;
   public isReadMoreVisible: boolean;
 
-  constructor(private changeDetectorRef: ChangeDetectorRef) { }
+  constructor(private changeDetectorRef: ChangeDetectorRef) {}
 
   ngOnInit(): void {
-    this.isReadMoreVisibleSubscription = fromEvent(window, 'resize').pipe(map(e => this.isMultiLineOverflows()))
-    .subscribe(isMultiLineOverflows =>  this.isReadMoreVisible = isMultiLineOverflows)
+    this.isReadMoreVisibleSubscription = fromEvent(window, 'resize')
+      .pipe(map(e => this.isMultiLineOverflows()))
+      .subscribe(isMultiLineOverflows => (this.isReadMoreVisible = isMultiLineOverflows));
   }
 
   ngAfterViewInit(): void {
     this.isReadMoreVisible = this.isMultiLineOverflows();
-    this.changeDetectorRef.detectChanges()
+    this.changeDetectorRef.detectChanges();
   }
   ngOnDestroy(): void {
     this.isReadMoreVisibleSubscription.unsubscribe();
@@ -47,5 +48,4 @@ export class NoteMessageComponent implements OnInit, AfterViewInit, OnDestroy {
   onReadMore() {
     this.expanded = true;
   }
-
 }

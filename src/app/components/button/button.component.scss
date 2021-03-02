@@ -7,14 +7,14 @@
 }
 
 .button--flat {
-  color: var(--button-primary) ;
+  color: var(--button-primary);
   background: transparent;
   padding: 0 2px;
   border-bottom: 1px solid;
   border-radius: 0;
 }
 .button--primary {
-  color: #fff ;
+  color: #fff;
   background-color: var(--button-primary);
 }
 .button--secondary {
@@ -23,13 +23,13 @@
 }
 
 .button--primary:hover {
-  background-color: var(--button-primary-hover)
+  background-color: var(--button-primary-hover);
 }
 
 .button--secondary:hover {
-  background-color: var(--button-secondary-hover)
+  background-color: var(--button-secondary-hover);
 }
 
 .button--flat:hover {
-  color: var(--button-flat-hover)
+  color: var(--button-flat-hover);
 }

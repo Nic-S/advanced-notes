@@ -1,21 +1,20 @@
-import {Component, OnInit, Output, EventEmitter, Input} from '@angular/core';
+import { Component, OnInit, Output, EventEmitter, Input } from '@angular/core';
 
-type ButtonType = 'flat' | 'primary' | 'secondary'
+type ButtonType = 'flat' | 'primary' | 'secondary';
 
 @Component({
   selector: 'app-button',
   templateUrl: './button.component.html',
-  styleUrls: ['./button.component.scss']
+  styleUrls: ['./button.component.scss'],
 })
 export class ButtonComponent implements OnInit {
-  @Input() public look: ButtonType = 'secondary'
+  @Input() public look: ButtonType = 'secondary';
   @Output() onClick = new EventEmitter<MouseEvent>();
-  public BUTTON_TYPE = {primary: 'primary', secondary: 'secondary', flat: 'flat'}
+  public BUTTON_TYPE = { primary: 'primary', secondary: 'secondary', flat: 'flat' };
 
-  constructor() { }
+  constructor() {}
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void {}
 
   onClickButton(event: MouseEvent) {
     this.onClick.emit(event);

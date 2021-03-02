@@ -2,9 +2,9 @@
   display: flex;
   flex-direction: column;
   padding: 10px 20px;
-  background-color: #EFF2F7;
-  >textarea {
-    border: 1px solid #C2CDDD;
+  background-color: #eff2f7;
+  > textarea {
+    border: 1px solid #c2cddd;
     resize: none;
     border-radius: 3px;
     min-height: 48px;
@@ -13,7 +13,7 @@
     outline: none;
     overflow: hidden;
   }
-  textarea:empty:before{
+  textarea:empty:before {
     content: attr(placeholder);
     pointer-events: none;
     display: block;
@@ -21,7 +21,7 @@
   }
 }
 
-.new-note-box__button{
+.new-note-box__button {
   margin-left: auto;
   margin-top: 5px;
 }

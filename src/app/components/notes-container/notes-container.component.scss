@@ -1,15 +1,15 @@
-:host{
+:host {
   display: block;
   height: 100%;
   padding: 20px;
 }
 
 // reverse for start overflow in end page
-.notes__wrapper{
+.notes__wrapper {
   overflow: auto;
   flex-grow: 1;
   height: 100%;
-  box-shadow: 0 3px 6px #C2CDDD;
+  box-shadow: 0 3px 6px #c2cddd;
   padding: 20px;
   box-sizing: border-box;
   display: flex;

@@ -1,11 +1,11 @@
 <div style="display: flex; flex-direction: column; height: 100%">
-<div *ngIf="notes$ | async as notes" class="notes__wrapper">
-  <div *ngFor="let note of notes" class="note__container">
-    <ng-container [ngSwitch]="note.type">
-      <app-in-note *ngSwitchCase="noteTypes.in" [note]="note"></app-in-note>
-      <app-out-note *ngSwitchCase="noteTypes.out" [note]="note"></app-out-note>
-    </ng-container>
+  <div *ngIf="notes$ | async as notes" class="notes__wrapper">
+    <div *ngFor="let note of notes" class="note__container">
+      <ng-container [ngSwitch]="note.type">
+        <app-in-note *ngSwitchCase="noteTypes.in" [note]="note"></app-in-note>
+        <app-out-note *ngSwitchCase="noteTypes.out" [note]="note"></app-out-note>
+      </ng-container>
+    </div>
   </div>
-</div>
-<app-note-footer (publish)="handlePublish($event)"></app-note-footer>
+  <app-note-footer (publish)="handlePublish($event)"></app-note-footer>
 </div>
