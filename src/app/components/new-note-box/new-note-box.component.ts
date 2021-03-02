@@ -1,4 +1,4 @@
-import {Component, EventEmitter, OnInit, Output} from '@angular/core';
+import {Component, ElementRef, EventEmitter, OnInit, Output, ViewChild} from '@angular/core';
 
 @Component({
   selector: 'app-new-note-box',
@@ -7,8 +7,8 @@ import {Component, EventEmitter, OnInit, Output} from '@angular/core';
 })
 export class NewNoteBoxComponent implements OnInit {
 
+  @ViewChild('input') inputRef:ElementRef;
   @Output() publish = new EventEmitter<string>()
-  public message: string = '';
 
   constructor() {
   }
@@ -18,14 +18,10 @@ export class NewNoteBoxComponent implements OnInit {
   }
 
   onPublish() {
-    if(this.message) {
-      this.publish.emit(this.message);
-      this.message = ''
+    const message = this.inputRef.nativeElement.textContent
+    if(message) {
+      this.publish.emit(message);
+      this.inputRef.nativeElement.textContent = ''
     }
-  }
-
-  onInput(event: Event) {
-    const divEl = event.target as HTMLDivElement
-    this.message = divEl.textContent || ''
   }
 }

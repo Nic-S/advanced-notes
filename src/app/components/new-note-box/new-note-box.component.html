@@ -1,5 +1,5 @@
 <div class="new-note-box">
 <!-- not use standard input with binding (form or template) for simulate chat behavior.-->
-  <div contenteditable="true" placeholder="Enter note about the process" [textContent]="message" (input)="onInput($event)"></div>
+  <div #input contenteditable="true" placeholder="Enter note about the process"></div>
   <app-button class="new-note-box__button" [look]="'primary'" (click)="onPublish()">Publish</app-button>
 </div>
