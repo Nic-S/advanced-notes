@@ -1,6 +1,7 @@
-<div style="display: flex; flex-direction: column; height: 100%">
-  <div *ngIf="notes$ | async as notes" class="notes__wrapper">
-    <div *ngFor="let note of notes" class="note__container">
+<div class="notes-container">
+  <div *ngIf="notes$ | async as notes" class="notes-container__content">
+    <!-- in real context this list must be virtualized -->
+    <div *ngFor="let note of notes" class="notes-container__note">
       <ng-container [ngSwitch]="note.type">
         <app-in-note *ngSwitchCase="noteTypes.in" [note]="note"></app-in-note>
         <app-out-note *ngSwitchCase="noteTypes.out" [note]="note"></app-out-note>

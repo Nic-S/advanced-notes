@@ -1,4 +1,9 @@
 <div class="new-note-box">
-  <textarea autoresize="200" [formControl]="message" placeholder="Enter note about the process"></textarea>
+  <textarea
+    autoresize="200"
+    [formControl]="message"
+    placeholder="Enter note about the process"
+    (keydown.enter)="onEnter($event)"
+  ></textarea>
   <app-button class="new-note-box__button" [look]="'primary'" (onClick)="onPublish()">Publish</app-button>
 </div>

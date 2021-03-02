@@ -22,6 +22,7 @@ app-root {
   font-family: Univers LT Roman, Helvetica, Arial, sans-serif;
 }
 
+// angular cant import global sass variable than we can use css var
 :root {
   --scroll-color: #{$scroll-color};
   --scroll-background: #{$scroll-background};
@@ -32,6 +33,7 @@ app-root {
   --button-flat-hover: #{$button-flat-hover};
 }
 
+// scrollbar
 *::-webkit-scrollbar {
   width: 8px;
 }
@@ -51,6 +53,7 @@ app-root {
   scrollbar-width: thin;
 }
 
+// font
 @font-face {
   font-family: 'Univers LT Roman';
   font-style: normal;

@@ -27,6 +27,7 @@ export class NoteMessageComponent implements OnInit, AfterViewInit, OnDestroy {
   constructor(private changeDetectorRef: ChangeDetectorRef) {}
 
   ngOnInit(): void {
+    // check at resize if lines are more of 3
     this.isReadMoreVisibleSubscription = fromEvent(window, 'resize')
       .pipe(map(e => this.isMultiLineOverflows()))
       .subscribe(isMultiLineOverflows => (this.isReadMoreVisible = isMultiLineOverflows));
@@ -37,6 +38,7 @@ export class NoteMessageComponent implements OnInit, AfterViewInit, OnDestroy {
     this.changeDetectorRef.detectChanges();
   }
   ngOnDestroy(): void {
+    // unsubscription
     this.isReadMoreVisibleSubscription.unsubscribe();
   }
 

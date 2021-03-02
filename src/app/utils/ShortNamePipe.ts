@@ -1,5 +1,8 @@
 import { Pipe, PipeTransform } from '@angular/core';
 
+/*
+pipe that return initial for each word
+*/
 @Pipe({
   name: 'shortName',
 })

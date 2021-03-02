@@ -1,5 +1,7 @@
 import { Directive, ElementRef, HostListener, Renderer2 } from '@angular/core';
 
+// directive that calculate the height of textarea
+
 @Directive({
   selector: 'textarea[autoresize]',
 })

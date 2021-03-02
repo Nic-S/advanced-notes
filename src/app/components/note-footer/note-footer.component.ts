@@ -20,4 +20,9 @@ export class NoteFooterComponent implements OnInit {
       this.message.setValue('');
     }
   }
+
+  onEnter(event: Event) {
+    this.onPublish();
+    event.preventDefault();
+  }
 }
