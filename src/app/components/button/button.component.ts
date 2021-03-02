@@ -9,7 +9,7 @@ type ButtonType = 'flat' | 'primary' | 'secondary'
 })
 export class ButtonComponent implements OnInit {
   @Input() public look: ButtonType = 'secondary'
-  @Output() click = new EventEmitter<MouseEvent>();
+  @Output() onClick = new EventEmitter<MouseEvent>();
   public BUTTON_TYPE = {primary: 'primary', secondary: 'secondary', flat: 'flat'}
 
   constructor() { }
@@ -18,6 +18,6 @@ export class ButtonComponent implements OnInit {
   }
 
   onClickButton(event: MouseEvent) {
-    this.click.emit(event);
+    this.onClick.emit(event);
   }
 }

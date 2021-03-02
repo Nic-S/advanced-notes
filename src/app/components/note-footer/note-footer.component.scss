@@ -3,7 +3,7 @@
   flex-direction: column;
   padding: 10px 20px;
   background-color: #EFF2F7;
-  >div {
+  >textarea {
     border: 1px solid #C2CDDD;
     resize: none;
     border-radius: 3px;
@@ -11,8 +11,9 @@
     padding: 10px;
     background-color: white;
     outline: none;
+    overflow: hidden;
   }
-  [contenteditable=true]:empty:before{
+  textarea:empty:before{
     content: attr(placeholder);
     pointer-events: none;
     display: block;

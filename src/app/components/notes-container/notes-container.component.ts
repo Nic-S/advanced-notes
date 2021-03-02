@@ -6,7 +6,7 @@ import {Observable} from "rxjs";
 @Component({
   selector: 'app-notes-container',
   templateUrl: './notes-container.component.html',
-  styleUrls: ['./notes-container.component.scss']
+  styleUrls: ['./notes-container.component.scss'],
 })
 export class NotesContainerComponent implements OnInit {
 

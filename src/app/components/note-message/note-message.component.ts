@@ -1,5 +1,5 @@
 import {
-  AfterViewInit,
+  AfterViewInit, ChangeDetectorRef,
   Component,
   ElementRef,
   Input,
@@ -24,7 +24,7 @@ export class NoteMessageComponent implements OnInit, AfterViewInit, OnDestroy {
   public expanded: boolean = false;
   public isReadMoreVisible: boolean;
 
-  constructor() { }
+  constructor(private changeDetectorRef: ChangeDetectorRef) { }
 
   ngOnInit(): void {
     this.isReadMoreVisibleSubscription = fromEvent(window, 'resize').pipe(map(e => this.isMultiLineOverflows()))
@@ -33,6 +33,7 @@ export class NoteMessageComponent implements OnInit, AfterViewInit, OnDestroy {
 
   ngAfterViewInit(): void {
     this.isReadMoreVisible = this.isMultiLineOverflows();
+    this.changeDetectorRef.detectChanges()
   }
   ngOnDestroy(): void {
     this.isReadMoreVisibleSubscription.unsubscribe();

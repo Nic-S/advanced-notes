@@ -24,9 +24,10 @@ export class NoteService {
 
   setUserNote = (note: Pick<Note, 'message' | 'date'>) => this.localStorageService.setUserNote(note);
 
+  // inverted order for avoid programmatically set overflow bar at end, overflow bar at end with css
   private sortNote = (a: Note, b: Note) => {
     // the ISO8601 string representation can be sorted like any other string;
-    return (a.date < b.date) ? -1 : ((a.date > b.date) ? 1 : 0);
+    return (a.date > b.date) ? -1 : ((a.date < b.date) ? 1 : 0);
   }
 }
 
