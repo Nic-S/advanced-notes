@@ -1,5 +1,5 @@
 <div class="notes-container">
-  <div *ngIf="notes$ | async as notes" class="notes-container__content">
+  <div #scrollContainer *ngIf="notes$ | async as notes" class="notes-container__content">
     <!-- in real context this list must be virtualized -->
     <div *ngFor="let note of notes" class="notes-container__note">
       <ng-container [ngSwitch]="note.type">
