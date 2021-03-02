@@ -1,3 +1,8 @@
+// avoid error codesandbox
+import 'core-js/es/reflect';
+import 'core-js/stable/reflect';
+import 'core-js/features/reflect';
+
 import { enableProdMode } from '@angular/core';
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 

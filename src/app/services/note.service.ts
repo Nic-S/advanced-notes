@@ -16,6 +16,7 @@ export class NoteService {
 
   getUserNotes = () => this.localStorageService.getUserNotes().pipe(map(notes => notes.map(fromOutNoteToNote)));
 
+  // take latest emit from both observable and return a sorted merged array
   getNotes = () =>
     combineLatest([this.getOthersNotes(), this.getUserNotes()]).pipe(
       map(([otherNotes, userNotes]) => [...otherNotes, ...userNotes].sort(this.sortNote))
