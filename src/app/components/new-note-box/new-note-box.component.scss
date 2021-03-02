@@ -1,0 +1,26 @@
+.new-note-box {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 20px;
+  background-color: #EFF2F7;
+  >div {
+    border: 1px solid #C2CDDD;
+    resize: none;
+    border-radius: 3px;
+    min-height: 48px;
+    padding: 10px;
+    background-color: white;
+    outline: none;
+  }
+  [contenteditable=true]:empty:before{
+    content: attr(placeholder);
+    pointer-events: none;
+    display: block;
+    opacity: 0.5;
+  }
+}
+
+.new-note-box__button{
+  margin-left: auto;
+  margin-top: 5px;
+}

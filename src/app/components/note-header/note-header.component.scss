@@ -1,7 +1,13 @@
 .note-header__container {
-  display: flex; padding-bottom: 10px
+  display: flex;
+  padding-bottom: 10px
+}
+
+.note-header__name {
+  font-weight: bold;
 }
 
 .note-header__date {
-  margin-left: auto
+  margin-left: auto;
+  color: #667790;
 }

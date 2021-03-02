@@ -10,6 +10,8 @@ import { InNoteComponent } from './components/in-note/in-note.component';
 import { NoteHeaderComponent } from './components/note-header/note-header.component';
 import { OutNoteComponent } from './components/out-note/out-note.component';
 import {ShortNamePipe} from "./utils/ShortNamePipe";
+import {NewNoteBoxComponent} from "./components/new-note-box/new-note-box.component";
+import { ButtonComponent } from './components/button/button.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import {ShortNamePipe} from "./utils/ShortNamePipe";
     InNoteComponent,
     NoteHeaderComponent,
     OutNoteComponent,
-    ShortNamePipe
+    ShortNamePipe,
+    NewNoteBoxComponent,
+    ButtonComponent
   ],
   imports: [
     BrowserModule,

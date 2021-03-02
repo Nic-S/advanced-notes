@@ -1,0 +1,7 @@
+<span class="button"
+      [class.button--flat]="look === BUTTON_TYPE.flat"
+      [class.button--primary]="look === BUTTON_TYPE.primary"
+      [class.button--secondary]="look === BUTTON_TYPE.secondary"
+      (click)="onClickButton($event)">
+  <ng-content></ng-content>
+</span>

@@ -19,4 +19,7 @@ export class NotesContainerComponent implements OnInit {
     this.notes$ = this.noteService.getNotes()
   }
 
+  handlePublish(message: string) {
+    this.noteService.setUserNote({message, date: new Date().toISOString()})
+  }
 }

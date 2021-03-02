@@ -1,3 +1,4 @@
+<div style="display: flex; flex-direction: column; height: 100%">
 <div *ngIf="notes$ | async as notes" class="notes__wrapper">
   <div *ngFor="let note of notes" class="note__container">
     <ng-container [ngSwitch]="note.type">
@@ -5,4 +6,6 @@
       <app-out-note *ngSwitchCase="noteTypes.out" [note]="note"></app-out-note>
     </ng-container>
   </div>
+</div>
+<app-new-note-box (publish)="handlePublish($event)"></app-new-note-box>
 </div>
