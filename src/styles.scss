@@ -1,6 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
 $scroll-color: #667790;
 $scroll-background: #0E141A1A;
+$button-primary: #D3135A;
+$button-primary-hover: darken($button-primary, 20%);
+$button-secondary: #C2CDDD;
+$button-secondary-hover: darken($button-secondary, 20%);
+$button-flat-hover: lighten($button-primary, 20%);
 
 html,
 body,
@@ -20,6 +25,11 @@ app-root {
 :root {
   --scroll-color: #{$scroll-color};
   --scroll-background: #{$scroll-background};
+  --button-primary: #{$button-primary};
+  --button-secondary: #{$button-secondary};
+  --button-primary-hover: #{$button-primary-hover};
+  --button-secondary-hover: #{$button-secondary-hover};
+  --button-flat-hover: #{$button-flat-hover};
 }
 
 *::-webkit-scrollbar {
@@ -35,9 +45,21 @@ app-root {
   border-radius: 10px;
 }
 
+// firefox scrollbar
+*{
+  scrollbar-color: var(--scroll-color) var(--scroll-background);
+  scrollbar-width: thin;
+}
+
 @font-face {
   font-family: 'Univers LT Roman';
   font-style: normal;
   font-weight: normal;
   src: url('./assets/font/Univers LT 55 Roman.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Univers LT Roman';
+  src: url('./assets/font/Univers LT 65 Bold.woff') format('woff');
+  font-weight: bold;
 }
