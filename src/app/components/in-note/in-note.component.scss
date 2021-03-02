@@ -3,6 +3,18 @@
   display: flex;
 }
 
+@media (max-width: 768px) {
+  .in__note {
+    width: 80%;
+  }
+}
+
+@media (max-width: 550px) {
+  .in__note {
+    width: 100%;
+  }
+}
+
 .in__note__content {
   flex-grow: 1;
 }

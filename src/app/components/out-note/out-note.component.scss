@@ -5,6 +5,18 @@
   flex-direction: row-reverse;
 }
 
+@media (max-width: 768px) {
+  .out__note {
+    width: 80%;
+  }
+}
+
+@media (max-width: 550px) {
+  .out__note {
+    width: 100%;
+  }
+}
+
 .out__note__content {
   flex-grow: 1;
 }

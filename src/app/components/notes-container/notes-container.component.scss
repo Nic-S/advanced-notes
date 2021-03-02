@@ -4,6 +4,12 @@
   padding: 20px;
 }
 
+@media (max-width: 1200px) {
+  :host {
+    padding: 0;
+  }
+}
+
 .notes-container {
   display: flex;
   flex-direction: column;
@@ -16,12 +22,18 @@
   overflow: auto;
   flex-grow: 1;
   height: 100%;
-  padding: 20px;
+  padding: 0 20px;
   box-sizing: border-box;
   display: flex;
   flex-direction: column-reverse;
 }
 
+@media (max-width: 550px) {
+  .notes-container__note {
+    padding: 20px;
+  }
+}
+
 .notes-container__note {
-  margin-bottom: 10px;
+  padding: 20px 0;
 }
