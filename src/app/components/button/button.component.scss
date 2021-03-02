@@ -1,17 +1,18 @@
 .button {
   border: 0;
   cursor: pointer;
-  padding: 10px;
   border-radius: 5px;
-  display: inline-block;
+  width: 90px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .button--flat {
   color: var(--button-primary);
   background: transparent;
   padding: 0 2px;
-  border-bottom: 1px solid;
-  border-radius: 0;
 }
 .button--primary {
   color: #fff;

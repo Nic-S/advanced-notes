@@ -1,6 +1,9 @@
 .note__message {
   display: flex;
   flex-direction: column;
+  word-break: break-word;
+  text-align: left;
+  padding: 15px;
 }
 
 .note__message--collapse {

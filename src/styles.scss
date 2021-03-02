@@ -19,7 +19,10 @@ app-root {
 
 * {
   box-sizing: border-box;
-  font-family: Univers LT Roman, Helvetica, Arial, sans-serif;
+  font: normal normal normal 16px/22px Univers LT Std;
+  letter-spacing: 0px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 // angular cant import global sass variable than we can use css var
@@ -54,15 +57,21 @@ app-root {
 }
 
 // font
-@font-face {
+/*@font-face {
   font-family: 'Univers LT Roman';
   font-style: normal;
   font-weight: normal;
   src: url('./assets/font/Univers LT 55 Roman.woff') format('woff');
+}*/
+
+@font-face {
+  font-family: 'Univers LT Std';
+  font-weight: normal;
+  src: url('./assets/font/Univers LT Std 55 Roman.otf') format('opentype');
 }
 
 @font-face {
-  font-family: 'Univers LT Roman';
+  font-family: 'Univers LT Std';
   src: url('./assets/font/Univers LT 65 Bold.woff') format('woff');
   font-weight: bold;
 }

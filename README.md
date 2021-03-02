@@ -1,6 +1,6 @@
-# AdvancedNotes
+# Advanced Notes
 
-Advance Notes is a sample project that want simulate the behavior of note manager. The incoming notes are stored in a local json file, and the out coming notes are saved and retrieve from local storage.
+Advance Notes is a sample project that wants simulate the behavior of note manager. The incoming notes are stored in a local json file, and the out coming notes are saved and retrieve from local storage.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.1.1.
 

@@ -13,15 +13,21 @@
     outline: none;
     overflow: hidden;
   }
-  textarea:empty:before {
-    content: attr(placeholder);
-    pointer-events: none;
-    display: block;
-    opacity: 0.5;
+  textarea::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    color: #cacfd5;
+  }
+  textarea::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #cacfd5;
+  }
+  textarea:-moz-placeholder {
+    /* Firefox 18- */
+    color: #cacfd5;
   }
 }
 
 .new-note-box__button {
   margin-left: auto;
-  margin-top: 5px;
+  margin-top: 10px;
 }
